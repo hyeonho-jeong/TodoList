@@ -1,0 +1,126 @@
+/* src / App.css */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  margin-top: 70px;
+  background:  rgba(244, 222, 222, 0.4);
+}
+
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 520px;
+  min-height: 600px;
+  text-align: center;
+  background-color: #9cb8b3;
+  margin: auto;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+
+h1 {
+  margin: 32px 0;
+  color: rgb(181, 254, 180);
+  font-size: 2rem;
+  line-height: 1;
+  font-family: 'Raleway', sans-serif;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 4px 0 0 4px;
+  border: 2px solid rgba(0,0,0,.5);
+  outline: none;
+  width: 320px;
+  background-color: transparent;
+  color: black;
+}
+
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  outline: none;
+  background: rgb(181, 254, 180);
+  background: linear-gradient(
+    90deg,
+    rgba(181, 254, 180, 1) 0%,
+    rgba(218, 254, 180, 1) 100%
+  );
+  color: darkgray;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.todo-input.edit {
+  border: 2px solid rgb(251, 198, 38);
+}
+.todo-button.edit {
+  background: rgb(250, 207, 51);
+  background: linear-gradient(
+    90deg,
+    rgb(250, 207, 51) 0%,
+    rgb(253, 255, 105) 100%
+  );
+  padding: 16px 22px;
+}
+.todo {
+  overflow-y: auto;
+}
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  background: rgb(149, 232, 255);
+  background: linear-gradient(
+    90deg,
+    rgb(149, 232, 255) 0%,
+    rgba(216, 222, 222, 1) 100%
+  );
+  padding: 15px;
+  width: 90%;
+  border-radius: 1rem;
+}
+
+.todo-row div:first-child {
+  font-size: 1.4rem;
+}
+
+.icons {
+  display: flex;
+  align-items: cent;
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.delete-icon {
+  margin-right: 5px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
